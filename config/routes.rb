@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  #get 'usuarios/new'
+
+  #get 'usuarios/create'
+
+  #get 'usuarios/index'
+
+  #get 'usuarios/show'
+
+  resources :usuarios, :only => [:new, :create, :show]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
