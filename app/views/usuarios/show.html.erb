@@ -9,7 +9,7 @@ Hola <%= @usuario.nombre %>
 
 	<%= c.label :contenido %> <br />
 	<%= c.text_field :contenido %>
-
+	<%= c.hidden_field :usuario_id, :value => params[:id] %>
 	<%= c.submit 'Crea Tarea' %> <br />
 
 <% end %>

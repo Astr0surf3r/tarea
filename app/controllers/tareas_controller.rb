@@ -6,14 +6,14 @@ class TareassController < ApplicationController
 
   	if @tarea.save
 
-  		redirect_to @usuario 
+  		redirect_to root_path
 
   	else
 
   		render 'new'
 
   	end
-  	
+
   end
 
 
