@@ -25,13 +25,14 @@ class UsuariosController < ApplicationController
   def index
 
   	@usuario = Usuario.all
-  	
+
   end
 
   def show
   	
   	@usuario = Usuario.find(params[:id])
-
+  	@tarea = Tarea.new
+  	
   end
 
   private

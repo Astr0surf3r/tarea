@@ -4,3 +4,12 @@
 Hola <%= @usuario.nombre %>
 
 <p> Inserta Tarea aquì </p>
+
+<%= form_for (@tarea) do |c| %>
+
+	<%= c.label :contenido %> <br />
+	<%= c.text_field :contenido %>
+
+	<%= c.submit 'Crea Tarea' %> <br />
+
+<% end %>
