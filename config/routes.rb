@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'paginas/bienvenido'
+
   #get 'usuarios/new'
 
   #get 'usuarios/create'
@@ -7,7 +9,9 @@ Rails.application.routes.draw do
 
   #get 'usuarios/show'
 
-  resources :usuarios, :only => [:new, :create, :show]
+  resources :usuarios, :only => [:index, :new, :create, :show]
+
+  root 'paginas#bienvenido'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

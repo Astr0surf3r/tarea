@@ -23,6 +23,9 @@ class UsuariosController < ApplicationController
   end
 
   def index
+
+  	@usuario = Usuario.all
+  	
   end
 
   def show
